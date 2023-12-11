@@ -18,5 +18,11 @@ namespace Principal.Entities
         {
             Balance = Balance * InterestingRate;
         }
+
+        public override void Withdraw(double amount)
+        {
+            base.Withdraw(amount);
+            Balance -= 2.0;
+        }
     }
 }
